@@ -3,6 +3,7 @@
    <p align="center">
   <img src="7art_logo.png" />
 </p>
+<br>
    
    ![alt text](https://www.digitalhouse.com/logo-DH.png)
 
