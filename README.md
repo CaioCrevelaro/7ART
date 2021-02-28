@@ -1,11 +1,17 @@
 # Projeto Integrador Android - DigitalHouse
-
-![alt text](https://www.digitalhouse.com/logo-DH.png)
+ 
+   <p align="center">
+  <img src="7art_logo.png" />
+</p>
+   
+   ![alt text](https://www.digitalhouse.com/logo-DH.png)
 
 # Projeto em Kotlin 
 > Kotlin é uma linguagem de programação orientada a objetos, assim como Java. A programação orientada a objetos (OOP) nos permite resolver o problema complexo usando objetos. Neste desafio , aprenderemos o que é uma classe, o que é um objeto e vários outros recursos da Programação Orientada a Objetos (OOP)
 
 
+
+  
 7 conceitos OOP em kotlin
 
 1. Abstração
@@ -17,6 +23,7 @@
 7. Composição
 
 ![alt text](https://www.sngular.com/wp-content/uploads/2019/11/Kotlin-Blog.png)
+
 
 ## Exemplo de uso
 
