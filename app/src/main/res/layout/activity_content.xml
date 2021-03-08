@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".view.ContentActivity">
+    android:orientation="vertical"
+    tools:context=".view.ContentActivity"
+    android:theme="@style/Theme.7ART">
 
-    <androidx.appcompat.widget.Toolbar
+    <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/content_activity_toolbar"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
-        app:layout_constraintTop_toTopOf="parent">
+
+        android:background="@color/black">
 
         <TextView
-            android:id="@+id/content_activity_type_content"
+            android:id="@+id/content_activity_toolbar_title"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:layout_gravity="center"
             android:text="Filmes/Séries"
-            android:textSize="25dp"
-            android:layout_gravity="center"/>
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
 
-    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.MaterialToolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/content_activity_recycler_view"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content"/>
 
-        android:layout_marginTop="12dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/content_activity_toolbar" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
