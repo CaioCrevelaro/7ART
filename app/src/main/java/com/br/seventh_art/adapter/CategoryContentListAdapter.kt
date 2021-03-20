@@ -10,7 +10,7 @@ import com.br.seventh_art.model.CategoryContent
 
 class CategoryContentListAdapter (
     val categoryList: List<CategoryContent>
-    ): RecyclerView.Adapter<CategoryContentListViewHolder>() {
+    ): RecyclerView.Adapter<CategoryContentListViewHolder?>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryContentListViewHolder {
 
@@ -24,6 +24,10 @@ class CategoryContentListAdapter (
 
             val category = holder.categoryContentTitle
             category.text = categoryList[position].categoryContent
+            var categorycontent : CategoryContent = categoryList.get(position)
+            val poster = holder.poster
+            poster.setImageResource(categorycontent.poster!!)
+
 
         }
     }

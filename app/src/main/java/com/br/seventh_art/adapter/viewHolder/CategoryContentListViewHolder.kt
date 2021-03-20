@@ -1,6 +1,7 @@
 package com.br.seventh_art.adapter.viewHolder
 
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -11,5 +12,5 @@ class CategoryContentListViewHolder (
 ):  RecyclerView.ViewHolder(view){
 
     val categoryContentTitle by lazy {itemView.findViewById<TextView>(R.id.category_content_title)}
-    val categoryCardView by lazy {itemView.findViewById<CardView>(R.id.category_content_cardview)}
+    val poster by lazy {itemView.findViewById<ImageView>(R.id.iv_poster)}
 }

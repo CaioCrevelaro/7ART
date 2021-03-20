@@ -3,23 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/category_content_cardview"
-    android:layout_width="195dp"
-    android:layout_height="290dp"
+    android:layout_width="150dp"
+    android:layout_height="250dp"
     android:layout_marginTop="8dp"
-    android:layout_marginBottom="8dp"
-    android:layout_marginRight="6dp"
-    android:layout_marginLeft="6dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
 
 
-    android:background="@color/white"
+    android:background="@color/black"
     android:orientation="vertical"
     android:theme="@style/Theme.7ART"
-    app:cardCornerRadius="28dp">
+    app:cardCornerRadius="25dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/poster_jumanji"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
         <TextView
             android:id="@+id/category_content_title"
             android:layout_width="wrap_content"
@@ -28,18 +35,16 @@
             android:layout_centerHorizontal="true"
             android:text="Title"
             android:textAllCaps="true"
-            android:textColor="@color/design_default_color_primary"
+            android:textColor="@color/white"
             android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.455">
 
         </TextView>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
