@@ -31,7 +31,7 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
-    <androidx.recyclerview.widget.RecyclerView
+    app:layout_constraintHorizontal_bias="0.5"<androidx.recyclerview.widget.RecyclerView
         android:id="@+id/content_activity_recycler_view"
 
         android:layout_width="match_parent"
