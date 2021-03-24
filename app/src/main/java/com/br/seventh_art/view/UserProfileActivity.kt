@@ -2,10 +2,11 @@ package com.br.seventh_art.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.br.seventh_art.R
 
-class perfil : AppCompatActivity() {
+class UserProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_perfil)
+        setContentView(R.layout.activity_user_profile)
     }
 }
