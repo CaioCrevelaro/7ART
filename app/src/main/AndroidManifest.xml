@@ -8,24 +8,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.7ART" >
-        <activity android:name=".view.MovieReadMoreActivity" >
-<!--        <activity android:name=".view.MovieActivity" >-->
-        </activity>
-        <activity android:name=".view.MainActivity" />
-        <activity android:name=".view.CategoryContentActivity" />
-        <activity android:name=".view.MovieActivity" >
-<!--        <activity android:name=".view.MovieReadMoreActivity" >-->
+
+        android:theme="@style/Theme.7ART">
+        <activity android:name=".view.MovieReadMoreActivity" />
+        <activity android:name=".view.MovieActivity" />
+        <activity android:name=".view.SeriesCategoryContentActivity"/>
+        <activity android:name=".view.UserProfileActivity"/>
+        <activity android:name=".view.MainActivity"/>
+        <activity android:name=".view.LoginActivity"/>
+        <activity android:name=".view.ContentActivity"/>
+        <activity android:name=".view.CategoryContentActivity"/>
+        <activity android:name=".view.SplashActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

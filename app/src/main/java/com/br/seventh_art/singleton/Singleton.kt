@@ -99,3 +99,6 @@ object MovieList {
         return list.toList()
     }
 }
+
+//<activity android:name=".view.MovieReadMoreActivity" >
+//<activity android:name=".view.MovieActivity" >
