@@ -27,7 +27,8 @@ class ContentActivity : AppCompatActivity() {
 
         val list = contentList().toList()
 
-        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         recyclerView.adapter = ContentListAdapter(list)
 
@@ -37,15 +38,69 @@ class ContentActivity : AppCompatActivity() {
 
         val list = mutableListOf<Content>()
 
-        list.add(Content("Soul", "Comédia"))
-        list.add(Content("Minha Mãe É Uma Peça", "Comédia"))
-        list.add(Content("We're The Millers", "Comédia"))
-        list.add(Content("Soul", "Comédia"))
-        list.add(Content("Minha Mãe É Uma Peça", "Comédia"))
-        list.add(Content("We're The Millers", "Comédia"))
-        list.add(Content("Soul", "Comédia"))
-        list.add(Content("Minha Mãe É Uma Peça", "Comédia"))
-        list.add(Content("We're The Millers", "Comédia"))
+        list.add(
+            Content(
+                "Soul",
+                "Comédia"
+            )
+        )
+
+        list.add(
+            Content(
+                "Minha Mãe É Uma Peça",
+                "Comédia"
+            )
+        )
+
+
+        list.add(
+            Content(
+                "We're The Millers",
+                "Comédia"
+            )
+        )
+
+        list.add(
+            Content(
+                "Soul",
+                "Comédia"
+            )
+        )
+
+        list.add(
+            Content(
+                "Minha Mãe É Uma Peça",
+                "Comédia"
+            )
+        )
+
+        list.add(
+            Content(
+                "We're The Millers",
+                "Comédia"
+            )
+        )
+
+        list.add(
+            Content(
+                "Soul",
+                "Comédia"
+            )
+        )
+
+        list.add(
+            Content(
+                "Minha Mãe É Uma Peça",
+                "Comédia"
+            )
+        )
+
+        list.add(
+            Content(
+                "We're The Millers",
+                "Comédia"
+            )
+        )
 
         return list
     }
