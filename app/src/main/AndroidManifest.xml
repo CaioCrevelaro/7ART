@@ -10,11 +10,13 @@
         android:supportsRtl="true"
 
         android:theme="@style/Theme.7ART">
+
         <activity android:name=".view.SeriesCategoryContentActivity"/>
         <activity android:name=".view.UserProfileActivity"/>
         <activity android:name=".view.MainActivity"/>
         <activity android:name=".view.LoginActivity"/>
-        <activity android:name=".view.ContentActivity"/>
+        <activity android:name=".view.MovieReadMoreActivity" />
+        <activity android:name=".view.MovieActivity" />
         <activity android:name=".view.CategoryContentActivity"/>
         <activity android:name=".view.SplashActivity">
 
