@@ -28,8 +28,8 @@ class CategoryContentActivity : AppCompatActivity() {
 
     private fun initViews() {
         val recyclerView by lazy { findViewById<RecyclerView>(R.id.category_content_activity_recycler_view) }
-        val toolbar by lazy { findViewById<Toolbar>(R.id.category_content_activity_toolbar) }
-        val tvFilmes by lazy { findViewById<TextView>(R.id.category_content_activity_toolbar_filmes) }
+//        val toolbar by lazy { findViewById<Toolbar>(R.id.category_content_activity_toolbar) }
+//        val tvFilmes by lazy { findViewById<TextView>(R.id.category_content_activity_toolbar_filmes) }
         val tvSeries by lazy { findViewById<TextView>(R.id.category_content_activity_toolbar_Series) }
 
         val list = categoryList().toList()
