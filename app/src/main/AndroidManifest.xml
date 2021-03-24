@@ -10,7 +10,8 @@
         android:supportsRtl="true"
 
         android:theme="@style/Theme.7ART">
-        <activity android:name=".view.SeriesCategoryContentActivity" >
+        <activity android:name=".view.SeriesCategoryContentActivity"/>
+        <activity android:name=".view.UserProfileActivity"/>
         <activity android:name=".view.MainActivity"/>
         <activity android:name=".view.LoginActivity"/>
         <activity android:name=".view.ContentActivity"/>
