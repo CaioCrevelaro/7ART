@@ -1,5 +1,6 @@
 package com.br.seventh_art.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.br.seventh_art.R
 import com.br.seventh_art.adapter.CategoryContentListAdapter
 import com.br.seventh_art.model.CategoryContent
+import com.br.seventh_art.view.SeriesCategoryContentActivity
 
 
 class CategoryContentActivity : AppCompatActivity() {
@@ -26,10 +28,9 @@ class CategoryContentActivity : AppCompatActivity() {
 
     private fun initViews() {
         val recyclerView by lazy { findViewById<RecyclerView>(R.id.category_content_activity_recycler_view) }
-        val toolbar by lazy { findViewById<Toolbar>(R.id.category_content_activity_toolbar) }
-        val tvFilmes by lazy { findViewById<TextView>(R.id.category_content_activity_toolbar_filmes) }
+//        val toolbar by lazy { findViewById<Toolbar>(R.id.category_content_activity_toolbar) }
+//        val tvFilmes by lazy { findViewById<TextView>(R.id.category_content_activity_toolbar_filmes) }
         val tvSeries by lazy { findViewById<TextView>(R.id.category_content_activity_toolbar_Series) }
-        val divider by lazy { findViewById<View>(R.id.divider) }
 
         val list = categoryList().toList()
 
@@ -38,11 +39,18 @@ class CategoryContentActivity : AppCompatActivity() {
         recyclerView.layoutManager = gridLayoutManager
 
         recyclerView.adapter = CategoryContentListAdapter(list)
+
+        tvSeries.setOnClickListener {
+            Intent(this, SeriesCategoryContentActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
 
     private fun categoryList(): MutableList<CategoryContent> {
         val list = mutableListOf<CategoryContent>()
 
+        list.clear()
         list.add(CategoryContent(R.drawable.poster_soul,"Comédia"))
         list.add(CategoryContent( R.drawable.poster_psycho,"Terror"))
         list.add(CategoryContent( R.drawable.poster_inception,"Ação"))

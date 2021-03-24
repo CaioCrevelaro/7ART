@@ -1,11 +1,8 @@
 package com.br.seventh_art.model
 
- class CategoryContent {
-    var poster: Int? = 0
-    var categoryContent: String? = null
-    constructor(poster: Int?, categoryContent: String?) {
+ data class CategoryContent (
+     val poster: Int,
+     val categoryContent: String
+         )
 
-        this.poster = poster
-        this.categoryContent = categoryContent
-    }
-}
+
