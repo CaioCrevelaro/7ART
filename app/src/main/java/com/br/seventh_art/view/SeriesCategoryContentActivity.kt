@@ -1,10 +1,9 @@
 package com.br.seventh_art.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
-import android.widget.Toolbar
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -26,10 +25,10 @@ class SeriesCategoryContentActivity : AppCompatActivity() {
 
     private fun initViews() {
         val recyclerView by lazy { findViewById<RecyclerView>(R.id.series_category_content_activity_recycler_view) }
-        val toolbar by lazy { findViewById<Toolbar>(R.id.series_category_content_activity_toolbar) }
         val tvFilmes by lazy { findViewById<TextView>(R.id.series_category_content_activity_toolbar_filmes) }
-        val tvSeries by lazy { findViewById<TextView>(R.id.series_category_content_activity_toolbar_Series) }
-        val divider by lazy { findViewById<View>(R.id.divider3) }
+//        val toolbar by lazy { findViewById<Toolbar>(R.id.series_category_content_activity_toolbar) }
+//        val tvSeries by lazy { findViewById<TextView>(R.id.series_category_content_activity_toolbar_Series) }
+//        val divider by lazy { findViewById<View>(R.id.divider3) }
 
         val list = categoryList().toList()
 
@@ -40,7 +39,7 @@ class SeriesCategoryContentActivity : AppCompatActivity() {
         recyclerView.adapter = CategoryContentListAdapter(list)
 
         tvFilmes.setOnClickListener {
-            finish()
+          Intent(this, CategoryContentActivity::class.java).also { startActivity(it) }
         }
     }
 
