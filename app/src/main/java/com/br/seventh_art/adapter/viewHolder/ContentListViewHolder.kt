@@ -12,5 +12,9 @@ class ContentListViewHolder(
 ):  RecyclerView.ViewHolder(view) {
 
     val contentTitle by lazy { itemView.findViewById<TextView>(R.id.content_title) }
+
+    val cardView by lazy { itemView.findViewById<CardView>(R.id.content_cardview) }
+
     val poster by lazy { itemView.findViewById<ImageView>(R.id.iv_poster) }
+
 }
