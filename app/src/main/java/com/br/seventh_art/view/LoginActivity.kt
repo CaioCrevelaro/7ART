@@ -11,12 +11,18 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val sigInButton by lazy { findViewById<Button>(R.id.button_signin) }
+        val signInButton by lazy { findViewById<Button>(R.id.button_signin_login) }
+        val signUPButton by lazy { findViewById<Button>(R.id.button_signup_login) }
 
-        sigInButton.setOnClickListener {
-
-            val intent = Intent(it.context, CategoryContentActivity::class.java)
+        signInButton.setOnClickListener {
+            val intent = Intent(it.context, SignInActivity::class.java)
             it.context.startActivity(intent)
         }
+
+        signUPButton.setOnClickListener {
+            val intent = Intent(it.context, SignUpActivity::class.java)
+            it.context.startActivity(intent)
+        }
+
     }
 }
