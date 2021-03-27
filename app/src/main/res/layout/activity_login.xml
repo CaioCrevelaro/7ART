@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.LoginActivity"
+    tools:context=".ui.login.LoginActivity"
     android:background="@drawable/gradiente_background">
 
     <ImageView
@@ -19,8 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/camera_logologo_7art"
-        android:foregroundGravity="center"
-        />
+        android:foregroundGravity="center"/>
 
     <ImageView
         android:id="@+id/art"
@@ -43,16 +42,15 @@
         app:srcCompat="@drawable/backdropcard_login"
         android:foregroundGravity="center"/>
 
-
     <Button
-        android:id="@+id/button_signin"
+        android:id="@+id/button_sign_in_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="SIGN IN"
         android:textColor="@color/white"
         android:textSize="22dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_signup"
+        app:layout_constraintBottom_toTopOf="@+id/button_sign_up_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +59,7 @@
         style="?android:attr/borderlessButtonStyle"/>
 
     <Button
-        android:id="@+id/button_signup"
+        android:id="@+id/button_sign_up_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -75,6 +73,5 @@
         app:layout_constraintTop_toTopOf="@+id/backdropcard"
         app:layout_constraintVertical_bias="0.7"
         style="?android:attr/borderlessButtonStyle"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
